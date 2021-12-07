@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    /*color: white;*/
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*ヘッダー＝＝＝＝＝＝＝＝*/
+
+.header {
+    background-color: #faa61a;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+}
+.header_title {
+    font-size: 28px;
+    line-height: 100px;
+}
+.header_right {
+    display: flex;
+}
+
+/*トップページ＝＝＝＝＝*/
+.contents {
+    background-color: #fff8cf;
+    height: calc(100% - 100px);
+}
+.boxs {
+    padding: 30px;
+}
+.art_box {
+    background-color: #a6ce39;
+    margin: 0 15% 20px;
+    padding: 30px;
+}
+
+/*作品投稿,編集画面＝＝＝＝＝*/
+.container {
+    background-color: #fff8cf;
+    padding-top: 30px;
+    height: calc(100vh - 100px)
+}
+
+.art_container {
+    background-color: #a6ce39;
+    margin: 0 auto;
+    padding: 50px;
+    height: 620px;
+    width: 500px;
+}
+.sub_title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*_form＝＝＝＝＝*/
+.field {
+    /*background-color: pink;*/
+    height: 80px;
+    padding: 10px;
+    font-size: 14px;
+}
+.actions {
+    /*background-color: tomato;*/
+    margin-top: 50px;
+    text-align: center;
+}
+
+.art_title,
+.art_grade,
+.art_comment,
+.art_btn {
+    padding: 10px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.art_title,
+.art_grade {
+    height: 40px;
+}
+
+.art_title,
+.art_comment {
+    width: 400px;
+}
+.actions_btn {
+    background-color: #faa61a;
+    width: 120px;
+    
+    
+}
+
+ /*お名前登録＝＝＝＝＝*/
+.name_container {
+    background-color: #a6ce39;
+    margin: 0 auto;
+    padding: 50px;
+    height: 300px;
+    width: 500px;
+}
+
+.name_name,
+.name_btn {
+    padding: 10px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.field_name {
+    /*background-color: pink;*/
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+}
+.name_name {
+    height: 40px;
+    width: 400px;
+    margin-top: 20px;
+}

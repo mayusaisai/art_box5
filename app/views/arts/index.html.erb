@@ -1,0 +1,36 @@
+<header class="header">
+    <div class="header_title"><a href="/">こども作品保存箱</a></div>
+    <div class="header_right">
+      
+    </div>
+</header>
+
+
+<!--<p id="notice"><%= notice %></p>-->
+
+<div class="contents">
+  <div class="content">
+    
+    <div class="boxs">
+
+  <!--<tbody>-->
+    <% @arts.each do |art| %>
+    <div class="art_box">
+      <tr>
+        <td><%= art.title %></td>
+        <td><%= image_tag art.image if art.image.attached? %></td>
+        <td><%= link_to 'Show', art %></td>
+        <td><%= link_to 'Edit', edit_art_path(art) %></td>
+        <td><%= link_to 'Destroy', art, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      </div>
+    <% end %>
+  <!--</tbody>-->
+</table>
+
+<br>
+
+<%= link_to 'New Art', new_art_path, class: "new_aat_bta" %>
+
+  </div>
+</div>
